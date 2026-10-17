@@ -1,128 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy – OACNZ App</title>
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 24px 60px;
-      color: #333;
-      line-height: 1.7;
-    }
-    h1 { font-size: 2rem; color: #1a1a2e; border-bottom: 2px solid #e0e0e0; padding-bottom: 12px; }
-    h2 { font-size: 1.2rem; color: #1a1a2e; margin-top: 32px; }
-    p, li { font-size: 0.97rem; }
-    ul { padding-left: 20px; }
-    .updated { color: #666; font-size: 0.9rem; margin-bottom: 32px; }
-    a { color: #4a90d9; }
+    :root { --ink:#1f2933; --muted:#52606d; --line:#e4e7eb; --accent:#1d4ed8; --note:#eff6ff; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:#fff; color:var(--ink);
+           font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    main { max-width:820px; margin:0 auto; padding:32px 16px 64px; }
+    h1 { font-size:2rem; margin:0 0 4px; }
+    .updated { color:var(--muted); margin:0 0 24px; }
+    h2 { font-size:1.3rem; margin:36px 0 10px; padding-top:12px; border-top:1px solid var(--line); }
+    h3 { font-size:1.05rem; margin:22px 0 6px; }
+    ul { padding-left:22px; }
+    li { margin:4px 0; }
+    .note { background:var(--note); border-left:4px solid var(--accent); padding:12px 16px; border-radius:4px; margin:14px 0; }
+    a { color:var(--accent); }
+    nav ol { columns:2; column-gap:32px; padding-left:22px; margin:0 0 8px; }
+    @media (max-width:560px) { nav ol { columns:1; } h1 { font-size:1.6rem; } }
   </style>
 </head>
 <body>
+<main>
 
-  <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: March 2026</p>
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: 17 October 2026</p>
 
-  <p>
-    This Privacy Policy describes how the Old Apostolic Church New Zealand ("OACNZ", "we", "us", or "our")
-    collects, uses, and protects information when you use the OACNZ mobile application ("the App").
-    By using the App, you agree to the practices described in this policy.
-  </p>
+<p>This Privacy Policy describes how the Old Apostolic Church New Zealand ("OACNZ", "we", "us", or "our")
+collects, uses, and protects information when you use the OACNZ mobile application ("the App") and the
+OACNZ Back Office web portal ("the Back Office"). By using the App, you agree to the practices described in this policy.
+We handle personal information in line with the New Zealand Privacy Act 2020.</p>
 
-  <h2>1. Who We Are</h2>
-  <p>
-    The OACNZ App is operated by the Old Apostolic Church New Zealand for the purpose of managing
-    church membership, attendance, reporting, and financial records within our church community.
-    The App is intended exclusively for authorised church members and administrators.
-  </p>
+<nav aria-label="Contents">
+  <ol>
+    <li><a href="#who">Who We Are</a></li>
+    <li><a href="#collect">Information We Collect</a></li>
+    <li><a href="#use">How We Use Your Information</a></li>
+    <li><a href="#location">Location and Attendance Check-in</a></li>
+    <li><a href="#camera">Camera and Photos</a></li>
+    <li><a href="#notifications">Push Notifications</a></li>
+    <li><a href="#storage">Data Storage and Security</a></li>
+    <li><a href="#sharing">Data Sharing</a></li>
+    <li><a href="#retention">Data Retention</a></li>
+    <li><a href="#rights">Your Rights and Choices</a></li>
+    <li><a href="#children">Children's Privacy</a></li>
+    <li><a href="#changes">Changes to This Policy</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ol>
+</nav>
 
-  <h2>2. Information We Collect</h2>
-  <p>We collect the following types of information:</p>
-  <ul>
-    <li><strong>Personal Information:</strong> Full name, date of birth, gender, contact details (email address, phone number, physical address).</li>
-    <li><strong>Church Membership Information:</strong> Membership status, priestship/eldership/overseer assignments, attendance records, and Sunday School participation.</li>
-    <li><strong>Financial Records:</strong> Contribution records, asset register entries, and cashbook data associated with your local church unit.</li>
-    <li><strong>Device Information:</strong> Device token used to deliver push notifications to your device via Expo and Firebase Cloud Messaging (FCM).</li>
-    <li><strong>Usage Data:</strong> App activity logs for diagnostic and security purposes.</li>
-  </ul>
+<h2 id="who">1. Who We Are</h2>
+<p>The OACNZ App is operated by the Old Apostolic Church New Zealand for the purpose of managing
+church membership, attendance, reporting, and financial records within our church community.
+The App is intended exclusively for authorised church members, their families, and church administrators.</p>
 
-  <h2>3. How We Use Your Information</h2>
-  <ul>
-    <li>To manage and maintain church membership records.</li>
-    <li>To provide role-based access to reports and administrative functions within the church hierarchy.</li>
-    <li>To send push notifications related to your church activities, approvals, and updates.</li>
-    <li>To generate reports for church leadership (Priests, Elders, Overseers).</li>
-    <li>To process and record financial contributions and church asset information.</li>
-    <li>To ensure the security and integrity of the App and its data.</li>
-  </ul>
+<h2 id="collect">2. Information We Collect</h2>
+<ul>
+  <li><strong>Personal Information:</strong> Full name, date of birth, gender, contact details (email address, phone number, physical address), and profile photo if you add one.</li>
+  <li><strong>Family Information:</strong> Details of your spouse and children that you enter, including whether a spouse is a church member. A spouse may be given their own App login linked to your household.</li>
+  <li><strong>Church Membership Information:</strong> Membership number, office (for example Brother, Sister, Priest or Elder), helper roles (for example Chairman, Secretary, Treasurer or Sunday School Teacher), and priestship/eldership/overseership assignments. Offices above Brother/Sister and all helper roles requested when you register are reviewed and approved by a church administrator before they take effect.</li>
+  <li><strong>Attendance Records:</strong> Which divine services and Sunday School sessions members of your household attended, how each attendance was recorded (by the Priest's roll, by scanning the door code, by automatic location check-in, or by answering a reminder), any reason given for an excused absence, and the Sunday School class of children. Absence is not recorded; it is implied when no attendance is recorded.</li>
+  <li><strong>Attendance Device Information:</strong> If you switch on automatic location check-in, the name and type (Android or iPhone) of your phone and a security key for that phone. Only a scrambled (hashed) form of the key is stored on our servers. See section 4.</li>
+  <li><strong>Financial Records:</strong> Receipts, cashbook entries, bank deposits, expenses, signatures on financial documents, and asset register entries associated with your local church Community.</li>
+  <li><strong>Health &amp; Safety Records:</strong> Incident reports and related forms submitted through the App, which may include the names and contact details of people involved.</li>
+  <li><strong>Device Information:</strong> A push notification token used to deliver notifications to your device via Expo and Firebase Cloud Messaging (FCM).</li>
+  <li><strong>Activity and Security Logs:</strong> Records of changes made to member records, and records of who viewed or downloaded church documents (including name, date, time and IP address), kept for audit and security purposes. Back Office users may also enrol an authenticator app for two-step sign-in; we store the information needed to verify those codes, not the codes themselves.</li>
+</ul>
 
-  <h2>4. Data Storage and Security</h2>
-  <p>
-    All personal data is stored securely on Microsoft Azure cloud infrastructure, including Azure SQL Database
-    and Azure Blob Storage, located in data centres that comply with international security standards.
-    Access to data is restricted based on your role within the church hierarchy, and all data transmissions
-    are encrypted using HTTPS/TLS.
-  </p>
-  <p>
-    We implement appropriate technical and organisational measures to protect your personal information
-    against unauthorised access, loss, or disclosure.
-  </p>
+<h2 id="use">3. How We Use Your Information</h2>
+<ul>
+  <li>To manage and maintain church membership and family records.</li>
+  <li>To record attendance at divine services and Sunday School, and to help your Priest notice and follow up when members have been absent for several services.</li>
+  <li>To provide role-based access to reports, documents and administrative functions within the church hierarchy.</li>
+  <li>To send push notifications related to your church activities, such as daily Home Teaching messages, birthday greetings, attendance reminders, approvals and updates.</li>
+  <li>To generate reports for church leadership (Priests, Elders, Overseers and the Apostle).</li>
+  <li>To process and record financial contributions, expenses and church asset information.</li>
+  <li>To ensure the security and integrity of the App and its data.</li>
+</ul>
 
-  <h2>5. Data Sharing</h2>
-  <p>We do <strong>not</strong> sell, trade, or rent your personal information to third parties. Your data may be shared only in the following limited circumstances:</p>
-  <ul>
-    <li><strong>Within OACNZ:</strong> Authorised church leadership (Priests, Elders, Overseers, Administrators) may access member data within their assigned scope.</li>
-    <li><strong>Service Providers:</strong> We use Microsoft Azure for hosting, and Expo/Firebase for push notification delivery. These providers process data solely to provide their services and are bound by appropriate data protection agreements.</li>
-    <li><strong>Legal Requirements:</strong> We may disclose information if required to do so by law or in response to valid legal processes.</li>
-  </ul>
+<h2 id="location">4. Location and Attendance Check-in</h2>
 
-  <h2>6. Push Notifications</h2>
-  <p>
-    The App uses Expo's push notification service and Google Firebase Cloud Messaging (FCM) to deliver
-    notifications to your device. Your device's push token is stored securely and used only to send
-    notifications relevant to your church role and activities. You may disable notifications at any time
-    through your device settings.
-  </p>
+<div class="note">
+  <strong>In short:</strong> automatic check-in is optional and off unless you switch it on. Your phone works out
+  whether you are at a church venue. <strong>Your location (GPS coordinates) is never sent to OACNZ and is never stored by us.</strong>
+</div>
 
-  <h2>7. Data Retention</h2>
-  <p>
-    We retain your personal information for as long as you are an active member of OACNZ, or as required
-    by applicable law. If your membership ends, your data may be retained for a reasonable period for
-    record-keeping purposes before being securely deleted or anonymised upon request.
-  </p>
+<h3>What it does</h3>
+<p>Members can choose to switch on automatic attendance check-in in the App (More → Attendance). When it is on and you
+arrive at a church venue while check-in for a service is open, the App checks your household in for that service
+and shows you a notification. You can then change who in your household was present.</p>
 
-  <h2>8. Your Rights</h2>
-  <p>You have the right to:</p>
-  <ul>
-    <li>Request access to the personal information we hold about you.</li>
-    <li>Request correction of inaccurate or incomplete information.</li>
-    <li>Request deletion of your personal data, subject to any legal obligations we may have to retain it.</li>
-    <li>Withdraw consent for push notifications at any time via your device settings.</li>
-  </ul>
-  <p>To exercise any of these rights, please contact us using the details below.</p>
+<h3>Why the App asks for location "all the time"</h3>
+<p>To notice your arrival at church when the App is closed, the App asks for permission to use location
+<strong>in the background</strong> ("Allow all the time" on Android, "Always" on iPhone). The App uses this
+permission only for the church venues it is watching and for no other purpose. When the App is open, it may also check
+your current location once, on your phone, to see whether you are already at a venue.</p>
 
-  <h2>9. Children's Privacy</h2>
-  <p>
-    The App is not intended for use by children under the age of 13. We do not knowingly collect personal
-    information from children under 13 without parental consent. Sunday School records of minors are
-    managed by authorised church administrators only.
-  </p>
+<h3>What leaves your phone</h3>
+<ul>
+  <li>The church venue locations are sent <em>to</em> your phone so it knows where to watch.</li>
+  <li>The comparison between your position and a venue happens <strong>on your phone</strong>.</li>
+  <li>When you arrive, the App sends only the identity of the venue and your phone's check-in key. Your coordinates are not included.</li>
+  <li>We store the resulting attendance record (that your household was present at that service and that it was recorded by location), and the date your phone's key was last used.</li>
+</ul>
 
-  <h2>10. Changes to This Policy</h2>
-  <p>
-    We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated"
-    date at the top of this page. We encourage you to review this policy periodically.
-  </p>
+<h3>Your choices</h3>
+<ul>
+  <li>Automatic check-in is never switched on without your action. You can still be recorded by your Priest's roll or by scanning the code at the church door instead.</li>
+  <li>You can switch it off at any time in the App. Switching it off stops location monitoring and cancels your phone's check-in key.</li>
+  <li>You can also withdraw location permission at any time in your phone's settings. Automatic check-in then stops working.</li>
+  <li>If a different person logs into the App on the same phone, automatic check-in is switched off for the previous household.</li>
+</ul>
 
-  <h2>11. Contact Us</h2>
-  <p>If you have any questions or concerns about this Privacy Policy or how your data is handled, please contact us at:</p>
-  <p>
-    <strong>Old Apostolic Church New Zealand</strong><br/>
-    Email: <a href="mailto:oacapp@oacnz.onmicrosoft.com">oacapp@oacnz.onmicrosoft.com</a>
-  </p>
+<h2 id="camera">5. Camera and Photos</h2>
+<p>The App uses your camera only when you choose to: to take profile or document photos (such as receipts and bank deposit slips)
+and to scan the attendance check-in code at the church door. When you scan the door code, no photo is taken or stored;
+only the code is read. You can choose photos from your photo library to upload. Uploaded photos are stored securely as described in section 7.</p>
 
+<h2 id="notifications">6. Push Notifications</h2>
+<p>The App uses Expo's push notification service and Google Firebase Cloud Messaging (FCM) to deliver
+notifications to your device. Your device's push token is stored securely and used only to send
+notifications relevant to your church role and activities. Automatic check-in confirmations are created on your phone itself.
+You may disable notifications at any time through your device settings.</p>
+
+<h2 id="storage">7. Data Storage and Security</h2>
+<p>All personal data is stored securely on Microsoft Azure cloud infrastructure in the Australia East region,
+including Azure SQL Database and Azure Blob Storage, in data centres that comply with international security standards.
+Access to data is restricted based on your role within the church hierarchy, and all data transmissions
+are encrypted using HTTPS/TLS. Passwords and check-in keys are stored only in hashed form. Documents marked
+view-only are shown as watermarked images and cannot be downloaded or printed from the App or Back Office.</p>
+<p>We implement appropriate technical and organisational measures to protect your personal information
+against unauthorised access, loss, or disclosure.</p>
+
+<h2 id="sharing">8. Data Sharing</h2>
+<p>We do <strong>not</strong> sell, trade, or rent your personal information to third parties. Your data may be shared only in the following limited circumstances:</p>
+<ul>
+  <li><strong>Within OACNZ:</strong> Authorised church leadership (Priests, Elders, Overseers, the Apostle and Administrators) and helper-role holders may access member data within their assigned scope. For example, a Priest sees the attendance of the members in his priestship.</li>
+  <li><strong>Service Providers:</strong> We use Microsoft Azure for hosting, Expo and Google Firebase for push notification delivery, and Twilio SendGrid for sending emails (such as password reset codes). These providers process data solely to provide their services and are bound by appropriate data protection agreements.</li>
+  <li><strong>Legal Requirements:</strong> We may disclose information if required to do so by law or in response to valid legal processes.</li>
+</ul>
+
+<h2 id="retention">9. Data Retention</h2>
+<p>We retain your personal information, including attendance records, for as long as you are an active member of OACNZ,
+or as required by applicable law. Financial records are kept for the periods required for church accounting and audit.
+If your membership ends, your data may be retained for a reasonable period for
+record-keeping purposes before being securely deleted or anonymised upon request. When you switch off automatic check-in,
+your phone's check-in key is cancelled immediately.</p>
+
+<h2 id="rights">10. Your Rights and Choices</h2>
+<p>You have the right to:</p>
+<ul>
+  <li>Request access to the personal information we hold about you, including your attendance records.</li>
+  <li>Request correction of inaccurate or incomplete information.</li>
+  <li>Request deletion of your personal data, subject to any legal obligations we may have to retain it.</li>
+  <li>Switch off automatic location check-in, or withdraw location or camera permission, at any time.</li>
+  <li>Withdraw consent for push notifications at any time via your device settings.</li>
+  <li>Make a complaint to the Office of the Privacy Commissioner (<a href="https://www.privacy.org.nz">privacy.org.nz</a>) if you are not satisfied with how we have handled your personal information.</li>
+</ul>
+<p>To exercise any of these rights, please contact us using the details below.</p>
+
+<h2 id="children">11. Children's Privacy</h2>
+<p>The App is not intended for use by children under the age of 13. We do not knowingly collect personal
+information from children under 13 without parental consent. Children's details, including Sunday School class and attendance,
+are entered by their parent or guardian or by authorised church officers, and are visible only to authorised church officers
+and Sunday School teachers within their scope.</p>
+
+<h2 id="changes">12. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated"
+date at the top of this page. We encourage you to review this policy periodically.</p>
+
+<h2 id="contact">13. Contact Us</h2>
+<p>If you have any questions or concerns about this Privacy Policy or how your data is handled, please contact us at:</p>
+<p><strong>Old Apostolic Church New Zealand</strong><br>
+Email: <a href="mailto:oacapp@oacnz.onmicrosoft.com">oacapp@oacnz.onmicrosoft.com</a></p>
+
+</main>
 </body>
 </html>
